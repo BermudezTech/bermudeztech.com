@@ -61,13 +61,21 @@ export default function Home() {
 
           {/* CTAs */}
           <div className="flex flex-col items-start gap-4">
-            <Link
-              href="#proyectos"
-              className="rounded-full bg-brand-darkblue px-6 py-3 font-display text-sm font-bold tracking-wide text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-lightblue hover:shadow-lg active:translate-y-0"
-            >
-              Ver proyectos
-            </Link>
-
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="#proyectos"
+                className="rounded-full bg-brand-darkblue px-6 py-3 font-display text-sm font-bold tracking-wide text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-lightblue hover:shadow-lg active:translate-y-0"
+              >
+                Ver proyectos
+              </Link>
+              <Link
+                href="/about-me"
+                className="rounded-full bg-brand-lightblue px-6 py-3 font-display text-sm font-bold tracking-wide text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-darkblue hover:shadow-lg active:translate-y-0"
+              >
+                Sobre mí
+              </Link>
+            </div>
+            
             <button
               onClick={handleCopyEmail}
               className="group relative flex items-center gap-2 font-sans text-sm font-semibold text-neutral-600 hover:text-brand-darkblue dark:text-neutral-300 dark:hover:text-brand-lightblue transition-colors duration-200 mt-1 cursor-pointer"
