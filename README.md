@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BERMUDEZ TECH | Portafolio de Ingeniería de Software
 
-## Getting Started
+Este proyecto es mi sitio web personal y portafolio profesional interactivo, diseñado y construido para presentar mi perfil, habilidades, experiencia y proyectos como Ingeniero de Software.
 
-First, run the development server:
+## Sobre Mí
+
+Soy **José Eduardo Bermúdez Garavito**, Ingeniero de Software Full-Stack e Ingeniero Mecatrónico. Me especializo en el ecosistema de **JavaScript/TypeScript**, con un enfoque sólido en el desarrollo multiplataforma (Web, Desktop y Mobile) y soluciones de ingeniería orientadas a optimizar la productividad y resolver problemas reales de negocio y del sector industrial.
+
+### Especialidades clave:
+- **Desarrollo Web & PWAs:** Arquitecturas offline-first utilizando NestJS, React e IndexedDB.
+- **Desarrollo Desktop:** Creación de aplicaciones de escritorio multiplataforma con Electron + Node.js e integraciones de hardware en tiempo real (ej. captura de datos seriales RS232).
+- **Ecosistema Técnico:** TypeScript, React, Next.js, Node.js, NestJS, SQL, Docker, AWS y desarrollo asistido por IA.
+
+---
+
+## Características del Portafolio
+
+- **Diseño iOS Glassmorphism:** Cabecera esmerilada con desenfoque de fondo dinámico y estética premium sin líneas duras de separación.
+- **Navegación Fluida:** Transiciones de página suaves en desvanecimiento (*fade* de 300 ms) implementadas mediante **Framer Motion**.
+- **Modo Oscuro Elegante:** Alternador de tema integrado con persistencia en `localStorage` y degradados fluidos en modo claro y oscuro.
+- **Acciones Interactivas:** Botones interactivos que permiten a los usuarios copiar mi correo electrónico (`jose@bermudeztech.com`) directamente al portapapeles con confirmación visual (Tooltip dinámico de doble estado).
+- **Tipografía Moderna:** Integración nativa de la fuente geométrica **Montserrat**.
+
+---
+
+## Requisitos Previos
+
+- [Node.js](https://nodejs.org/) (Versión 18 o superior recomendada)
+- npm, yarn, pnpm o bun
+
+## Comenzando
+
+### 1. Clonar el repositorio e instalar dependencias
+
+```bash
+npm install
+```
+
+### 2. Ejecutar el servidor de desarrollo
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Compilar para producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El comando generará una versión optimizada y estática en la carpeta de distribución para producción.
