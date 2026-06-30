@@ -9,7 +9,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label="Toggle theme"
-      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-brand-lightblue text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-brand-darkblue active:scale-95"
+      className="fixed bottom-6 right-6 z-50 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-brand-lightblue text-white shadow-lg transition-all duration-300 hover:scale-110 hover:bg-brand-darkblue active:scale-95"
     >
       {theme === "light" ? (
         // Moon Icon
@@ -19,7 +19,7 @@ export default function ThemeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={2}
           stroke="currentColor"
-          className="h-5 w-5 transition-transform duration-500 rotate-0 hover:rotate-12"
+          className="h-4 w-4 md:h-5 md:w-5 transition-transform duration-500 rotate-0 hover:rotate-12"
         >
           <path
             strokeLinecap="round"
@@ -35,7 +35,7 @@ export default function ThemeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={2}
           stroke="currentColor"
-          className="h-5 w-5 transition-transform duration-500 rotate-0 hover:rotate-90"
+          className="h-4 w-4 md:h-5 md:w-5 transition-transform duration-500 rotate-0 hover:rotate-90"
         >
           <path
             strokeLinecap="round"
