@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectCardProps {
+  id: string;
   title: string;
   description: string;
   tags: string[];
@@ -11,11 +12,11 @@ interface ProjectCardProps {
   role?: string;
   githubUrl?: string;
   liveUrl?: string;
-  detailsUrl?: string;
   variant?: "featured" | "standard" | "minimal";
 }
 
 export default function ProjectCard({
+  id,
   title,
   description,
   tags,
@@ -23,11 +24,11 @@ export default function ProjectCard({
   role,
   githubUrl,
   liveUrl,
-  detailsUrl = "#",
   variant = "standard",
 }: ProjectCardProps) {
   const isFeatured = variant === "featured";
   const isMinimal = variant === "minimal";
+  const projectUrl = `/project/${id}`;
 
   if (isMinimal) {
     return (
@@ -39,7 +40,7 @@ export default function ProjectCard({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
               </svg>
             </div>
-
+            
             {/* Minimal Links */}
             <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               {githubUrl && (
@@ -59,21 +60,23 @@ export default function ProjectCard({
             </div>
           </div>
 
-          {/* Minimal Image Support */}
+          {/* Minimal Image Link */}
           {image && (
-            <div className="relative w-full h-24 overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200/30 dark:border-neutral-800/30 mb-3">
+            <Link href={projectUrl} className="relative block w-full h-24 overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200/30 dark:border-neutral-800/30 mb-3 hover:opacity-90 transition-opacity">
               <Image
                 src={image}
                 alt={title}
                 fill
                 className="object-cover object-center group-hover:scale-102 transition-transform duration-500"
               />
-            </div>
+            </Link>
           )}
 
-          <h3 className="font-display text-sm font-bold text-neutral-900 dark:text-neutral-50 mb-1">
-            {title}
-          </h3>
+          <Link href={projectUrl} className="hover:text-brand-lightblue dark:hover:text-brand-lightblue transition-colors">
+            <h3 className="font-display text-sm font-bold text-neutral-900 dark:text-neutral-50 mb-1">
+              {title}
+            </h3>
+          </Link>
           <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed font-medium mb-2.5">
             {description}
           </p>
@@ -81,10 +84,10 @@ export default function ProjectCard({
           {/* Read More Link */}
           <div className="mb-3.5">
             <Link
-              href={detailsUrl}
+              href={projectUrl}
               className="inline-flex items-center gap-1.5 text-[11px] font-bold text-brand-darkblue hover:text-brand-lightblue dark:text-brand-lightblue dark:hover:text-brand-darkblue transition-colors cursor-pointer group/link"
             >
-              <span>Ver más</span>
+              <span>Leer más</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="h-2.5 w-2.5 transition-transform group-hover/link:translate-x-0.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
@@ -107,14 +110,14 @@ export default function ProjectCard({
     <div className={`group flex flex-col ${isFeatured ? "lg:flex-row gap-6 p-6 md:p-8" : "p-5"} rounded-2xl border border-neutral-200/50 bg-white/40 shadow-sm backdrop-blur-md dark:border-neutral-800/50 dark:bg-neutral-950/40 hover:border-brand-lightblue/50 dark:hover:border-brand-lightblue/35 hover:-translate-y-1 transition-all duration-300`}>
       {/* Project Image */}
       {image && (
-        <div className={`relative overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200/30 dark:border-neutral-800/30 ${isFeatured ? "w-full lg:w-1/2 aspect-video lg:h-64 h-auto shrink-0" : "w-full aspect-video mb-4"}`}>
+        <Link href={projectUrl} className={`relative block overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200/30 dark:border-neutral-800/30 hover:opacity-95 transition-opacity ${isFeatured ? "w-full lg:w-1/2 aspect-video lg:h-64 h-auto shrink-0" : "w-full aspect-video mb-4"}`}>
           <Image
             src={image}
             alt={title}
             fill
             className="object-cover object-center group-hover:scale-102 transition-transform duration-500"
           />
-        </div>
+        </Link>
       )}
 
       {/* Project Details */}
@@ -128,9 +131,11 @@ export default function ProjectCard({
                   {role}
                 </span>
               )}
-              <h3 className={`font-display font-bold text-neutral-900 dark:text-neutral-50 leading-tight ${isFeatured ? "text-xl md:text-2xl" : "text-base"}`}>
-                {title}
-              </h3>
+              <Link href={projectUrl} className="hover:text-brand-lightblue dark:hover:text-brand-lightblue transition-colors">
+                <h3 className={`font-display font-bold text-neutral-900 dark:text-neutral-50 leading-tight ${isFeatured ? "text-xl md:text-2xl" : "text-base"}`}>
+                  {title}
+                </h3>
+              </Link>
             </div>
 
             {/* Action Links */}
@@ -171,7 +176,7 @@ export default function ProjectCard({
           {/* Read More Link */}
           <div className="mb-4">
             <Link
-              href={detailsUrl}
+              href={projectUrl}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-darkblue hover:text-brand-lightblue dark:text-brand-lightblue dark:hover:text-brand-darkblue transition-colors cursor-pointer group/link"
             >
               <span>Leer más</span>
