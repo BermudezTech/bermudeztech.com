@@ -38,7 +38,7 @@ export default function Header() {
             Acerca de
           </Link>
           <Link
-            href="#proyectos"
+            href="/projects"
             className="font-display text-sm font-semibold text-neutral-600 hover:text-brand-darkblue dark:text-neutral-300 dark:hover:text-brand-lightblue transition-colors duration-200"
           >
             Proyectos
@@ -96,7 +96,7 @@ export default function Header() {
               Acerca de
             </Link>
             <Link
-              href="#proyectos"
+              href="/projects"
               onClick={() => setIsOpen(false)}
               className="font-display text-base font-semibold text-neutral-600 hover:text-brand-darkblue dark:text-neutral-300 dark:hover:text-brand-lightblue py-2 transition-colors duration-200"
             >

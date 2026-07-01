@@ -63,7 +63,7 @@ export default function Home() {
           <div className="flex flex-col items-start gap-4">
             <div className="flex flex-wrap gap-4">
               <Link
-                href="#proyectos"
+                href="/projects"
                 className="rounded-full bg-brand-darkblue px-6 py-3 font-display text-sm font-bold tracking-wide text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-lightblue hover:shadow-lg active:translate-y-0"
               >
                 Ver proyectos
