@@ -42,10 +42,8 @@ export default function SocialLinks() {
       </a>
 
       {/* YouTube */}
-      <a
-        href="https://youtube.com"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/youtube"
         aria-label="YouTube"
         className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-lightblue text-white shadow-sm transition-all duration-300 hover:scale-110 hover:bg-brand-darkblue active:scale-95"
       >
@@ -57,7 +55,7 @@ export default function SocialLinks() {
         >
           <path d="M23.498 6.163c-.272-1.016-1.072-1.816-2.088-2.088C19.578 3.545 12 3.545 12 3.545s-7.578 0-9.41.53c-1.016.272-1.816 1.072-2.088 2.088C0 7.995 0 11.857 0 11.857s0 3.862.502 5.694c.272 1.016 1.072 1.816 2.088 2.088 1.832.53 9.41.53 9.41.53s7.578 0 9.41-.53c1.016-.272 1.816-1.072 2.088-2.088.502-1.832.502-5.694.502-5.694s0-3.862-.502-5.694zM9.545 15.568V8.144L16 11.856l-6.455 3.712z" />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }
