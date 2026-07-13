@@ -7,9 +7,9 @@ stack: ["React", "Vite", "Node.js", "Express", "MySQL"]
 github: "https://github.com/BermudezTech/retrophotos"
 live: "https://bermudeztech.com/retrophotos"
 images: [
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Retrophotos+Vista+Album",
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Biblioteca+Publica+Colaborativa",
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Organizacion+de+Memorias"
+  "/projects/retrophotos/retrophotos-1.png",
+  "/projects/retrophotos/retrophotos-2.png",
+  "/projects/retrophotos/retrophotos-3.png",
 ]
 ---
 

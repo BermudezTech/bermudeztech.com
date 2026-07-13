@@ -7,9 +7,12 @@ stack: ["React", "Node.js", "MySQL", "Vite", "PWA"]
 github: ""
 live: "https://repertorioliturgico.bermudeztech.com"
 images: [
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Repertorio+Liturgico+Dashboard",
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Editor+de+Acordes+y+Tonos",
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Interfaz+Liquid+Glass"
+  "/projects/repertorio-liturgico/repertorio-liturgico-1.png",
+  "/projects/repertorio-liturgico/repertorio-liturgico-2.png",
+  "/projects/repertorio-liturgico/repertorio-liturgico-3.png",
+  "/projects/repertorio-liturgico/repertorio-liturgico-4.png",
+  "/projects/repertorio-liturgico/repertorio-liturgico-5.png",
+  "/projects/repertorio-liturgico/repertorio-liturgico-6.png",
 ]
 ---
 **Repertorio Litúrgico** es una Progressive Web App (PWA) diseñada específicamente para optimizar la organización y ejecución musical en celebraciones religiosas. Permite a los grupos musicales gestionar su base de datos de canciones y crear repertorios personalizados con herramientas dinámicas de edición musical.

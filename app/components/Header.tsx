@@ -51,7 +51,7 @@ export default function Header() {
           </Link>
           <SocialLinks />
           <Link
-            href="/cv.pdf"
+            href="/SoftwareEngineerCV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-brand-lightblue px-5 py-2 font-display text-sm font-bold tracking-wider text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-darkblue hover:shadow-md active:translate-y-0"
