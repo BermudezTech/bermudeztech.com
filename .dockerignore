@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+build
+*.db
+*.db-journal
+.git
+.gitignore
+.env.local
+.gemini
+AGENTS.md
+CLAUDE.md
+*.tsbuildinfo
+npm-debug.log
+docker-compose*.yml
+Dockerfile
