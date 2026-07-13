@@ -9,7 +9,6 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   image?: string;
-  role?: string;
   githubUrl?: string;
   liveUrl?: string;
   variant?: "featured" | "standard" | "minimal";
@@ -21,7 +20,6 @@ export default function ProjectCard({
   description,
   tags,
   image,
-  role,
   githubUrl,
   liveUrl,
   variant = "standard",
@@ -126,11 +124,6 @@ export default function ProjectCard({
           {/* Header Row */}
           <div className="flex items-start justify-between gap-4 mb-2">
             <div>
-              {role && (
-                <span className="inline-block px-2.5 py-0.5 rounded-full bg-brand-lightblue/10 dark:bg-brand-lightblue/25 text-brand-darkblue dark:text-brand-lightblue text-xs font-semibold mb-2 tracking-wide uppercase">
-                  {role}
-                </span>
-              )}
               <Link href={projectUrl} className="hover:text-brand-lightblue dark:hover:text-brand-lightblue transition-colors">
                 <h3 className={`font-display font-bold text-neutral-900 dark:text-neutral-50 leading-tight ${isFeatured ? "text-xl md:text-2xl" : "text-base"}`}>
                   {title}

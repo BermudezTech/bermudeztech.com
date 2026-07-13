@@ -43,6 +43,12 @@ export default function Header() {
           >
             Proyectos
           </Link>
+          <Link
+            href="/youtube"
+            className="font-display text-sm font-semibold text-neutral-600 hover:text-brand-darkblue dark:text-neutral-300 dark:hover:text-brand-lightblue transition-colors duration-200"
+          >
+            YouTube
+          </Link>
           <SocialLinks />
           <Link
             href="/cv.pdf"
@@ -101,6 +107,13 @@ export default function Header() {
               className="font-display text-base font-semibold text-neutral-600 hover:text-brand-darkblue dark:text-neutral-300 dark:hover:text-brand-lightblue py-2 transition-colors duration-200"
             >
               Proyectos
+            </Link>
+            <Link
+              href="/youtube"
+              onClick={() => setIsOpen(false)}
+              className="font-display text-base font-semibold text-neutral-600 hover:text-brand-darkblue dark:text-neutral-300 dark:hover:text-brand-lightblue py-2 transition-colors duration-200"
+            >
+              YouTube
             </Link>
 
             {/* Social Links inside Mobile Menu */}
