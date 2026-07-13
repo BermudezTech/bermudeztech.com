@@ -46,11 +46,21 @@ export default function ProjectCarousel({ images, title }: ProjectCarouselProps)
                 : "opacity-0 scale-95 pointer-events-none"
             }`}
           >
+            {/* Blurred Background Image */}
+            <Image
+              src={img}
+              alt=""
+              fill
+              className="object-cover object-center blur-lg opacity-70 scale-105 select-none pointer-events-none"
+              priority={idx === 0}
+            />
+            {/* Sharp Foreground Image */}
             <Image
               src={img}
               alt={`${title} - Imagen ${idx + 1}`}
               fill
-              className="object-cover object-center"
+              className="object-contain object-center z-10"
+              priority={idx === 0}
             />
           </div>
         ))}

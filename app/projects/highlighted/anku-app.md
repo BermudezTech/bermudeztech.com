@@ -1,5 +1,5 @@
 ---
-id: "anku-cmms"
+id: "anku-app"
 title: "Anku APP CMMS"
 subtitle: "Gestión inteligente de mantenimiento y soporte técnico con arquitectura offline-first."
 description: "Plataforma progresiva (PWA) de gestión de mantenimiento. Diseñada con arquitectura offline-first y almacenamiento local mediante IndexedDB, sincroniza datos de forma bidireccional y reduce en un 80% el tiempo de generación y envío de informes operativos desde el campo. Incluye módulos de Inteligencia Artificial."
@@ -7,9 +7,13 @@ stack: ["React", "NestJS", "PostgreSQL", "IndexedDB", "Tailwind CSS"]
 github: ""
 live: ""
 images: [
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Anku+CMMS+Panel+Principal",
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Anku+CMMS+Offline+Sync",
-  "https://placehold.co/800x450/171717/38bdf8.png?text=Anku+CMMS+Reporte+de+Campo"
+  "/projects/anku-app/anku-app-1.png",
+  "/projects/anku-app/anku-app-2.png",
+  "/projects/anku-app/anku-app-3.png",
+  "/projects/anku-app/anku-app-4.png",
+  "/projects/anku-app/anku-app-5.png",
+  "/projects/anku-app/anku-app-6.png",
+  "/projects/anku-app/anku-app-7.png",
 ]
 ---
 Anku es una Progressive Web App (PWA), diseñada para optimizar las operaciones críticas de mantenimiento técnico en campo. Construida bajo una arquitectura **offline-first**, Anku garantiza la continuidad operativa incluso en entornos sin conectividad, permitiendo a los técnicos realizar reportes, gestionar inventarios y auditar equipos con total fiabilidad.

@@ -10,6 +10,9 @@ images: [
   "/projects/granulomatrix/granulomatrix-1.png",
   "/projects/granulomatrix/granulomatrix-2.png",
   "/projects/granulomatrix/granulomatrix-3.png",
+  "/projects/granulomatrix/granulomatrix-4.png",
+  "/projects/granulomatrix/granulomatrix-5.png",
+  "/projects/granulomatrix/granulomatrix-6.png",
 ]
 ---
 

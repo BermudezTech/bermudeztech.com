@@ -9,6 +9,8 @@ live: "https://pollamundial.bermudeztech.com"
 images: [
   "/projects/polla-mundial-2026/polla-mundial-2026-1.png",
   "/projects/polla-mundial-2026/polla-mundial-2026-2.png",
+  "/projects/polla-mundial-2026/polla-mundial-2026-3.png",
+  "/projects/polla-mundial-2026/polla-mundial-2026-4.png",
 ]
 ---
 
